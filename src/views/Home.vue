@@ -38,7 +38,6 @@ import logo from "../assets/logo.png";
 </template>
 
 <style scoped>
-<<<<<<< HEAD
 .about_me {
   background-color: var(--background);
   padding: 30px;
@@ -60,40 +59,5 @@ p span {
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: bold;
-=======
-.left_content {
-  height: 100vh;
-  width: 33vw;
-  background-color: rgba(248, 249, 250, 0.888);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right_content {
-  height: 100vh;
-  width: 70vw;
-  background-color: rgba(202, 41, 41, 0.856);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile_image {
-  padding: 50px;
-}
-
-.myImage {
-  background-color: rgba(156, 144, 144, 0.323);
-  border-radius: 5px;
-}
-
-.box_content {
-  width: 800px;
-  height: 500px;
-  background-color: white;
-  box-shadow: -10px 1px 1px rgba(0, 0, 0, 0.299);
-  border-radius: 10px;
->>>>>>> 97be8fc (Updates)
 }
 </style>
