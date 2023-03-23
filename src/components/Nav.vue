@@ -14,31 +14,4 @@ import { RouterLink } from "vue-router";
   </div>
 </template>
 
-<style scoped>
-.active {
-  background-color: var(--background);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-nav {
-  box-shadow: 0px 2px 10px rgba(110, 106, 106, 0.686);
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-a {
-  color: black;
-  font-size: 3rem;
-  color: var(--textColor);
-}
-
-li {
-  list-style-type: none;
-}
-</style>
+<style scoped></style>

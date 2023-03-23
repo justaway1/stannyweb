@@ -2,7 +2,6 @@
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
-import About from "../components/About.vue";
 </script>
 
 <template>
@@ -15,9 +14,47 @@ import About from "../components/About.vue";
   <div class="right_content">
     <div class="box_content">
       <Nav />
-      <h1>Hello, my name is STAN!</h1>
+      <div class="about_me">
+        <p>
+          <span>Hi</span> there! My name is <span>Stan</span>, and I'm a
+          <span>passionate</span> web developer with some years of experience in
+          the field. I have a <span>strong</span> foundation in web development
+          technologies, including HTML5, CSS3, JavaScript, and various web
+          frameworks like React and Vue.js.
+        </p>
+        <p>
+          I have worked on various web development projects, ranging from
+          <span>simple</span> landing pages to <span>complex</span> web
+          applications, and I <span>enjoy</span> the process of taking a concept
+          and turning it into a functional and beautiful website that meets the
+          client's needs.
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.about_me {
+  background-color: var(--background);
+  padding: 30px;
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.9rem;
+  border-left: 10px solid var(--secondary);
+  box-shadow: -5px 1px 0 rgba(0, 0, 0, 0.204);
+  text-align: left;
+}
+
+.about_me p:first-of-type {
+  margin-bottom: 20px;
+}
+
+p span {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+</style>
