@@ -7,12 +7,9 @@
 :root {
     --background: rgb(81, 57, 236);
     --textColor: rgba(38, 205, 243, 0.874);
-<<<<<<< HEAD
-    <<<<<<< HEAD --secondary: #FFE53D;
-    =======>>>>>>>ba57a0c (Navigation is Done !)
-=======
-    --secondary: #FFE53D;
->>>>>>> 58934d2 (Added 1 project)
+    <<<<<<< HEAD <<<<<<< HEAD --secondary: #FFE53D;
+    =======>>>>>>>ba57a0c (Navigation is Done !)=======--secondary: #FFE53D;
+    >>>>>>>58934d2 (Added 1 project)
 }
 
 
@@ -54,201 +51,198 @@ ul {
     align-items: center;
 }
 
-<<<<<<< HEAD
-
-nav a {
+<<<<<<< HEAD nav a {
     font-size: 2rem;
     color: var(--background);
     font-weight: bold;
     padding: 4px 20px;
     border-radius: 3px;
-=======
-a {
-    font-size: 2.5rem;
-    color: var(--background);
-    font-weight: bold;
-    padding: 4px 20px;
-    border-radius: 10px;
->>>>>>> 58934d2 (Added 1 project)
 
-}
+    =======a {
+        font-size: 2rem;
+        color: var(--background);
+        font-weight: bold;
+        padding: 4px 20px;
+        border-radius: 10px;
 
-
-li {
-    list-style-type: none;
-}
-
-
-.left_content {
-    position: relative;
-    height: 100vh;
-    width: 25vw;
-    background-color: rgba(248, 249, 250, 0.888);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.contact_info {
-    background-color: var(--background);
-    padding: 5px 20px;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 40px auto 0 auto;
-    border-radius: 5px;
-    box-shadow: -5px 1px 0 rgba(0, 0, 0, 0.204);
-    border-left: 6px solid var(--secondary);
-    letter-spacing: 0.2rem;
-}
-
-.logo_brand {
-    height: 50px;
-    width: 200px;
-}
-
-.right_content {
-    position: relative;
-    height: 100vh;
-    width: 75vw;
-    background-color: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-    padding: 0 20px 0 100px;
-}
-
-.profile_image {
-    position: relative;
-    left: 200px;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.056);
-    border-left: 10px solid var(--background);
-    box-shadow: -5px 1px 0 rgba(0, 0, 0, 0.204);
-    border-radius: 5px;
-}
-
-.myImage {
-    border-radius: 5px;
-    padding: 20px;
-    height: 100%;
-}
-
-.box_content {
-    padding: 20px;
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    box-shadow: -10px 1px 1px rgba(0, 0, 0, 0.299);
-}
-
-
-
-/* MEDIA */
-
-
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
     }
+
+
+    li {
+        list-style-type: none;
+    }
+
 
     .left_content {
-        height: auto;
         position: relative;
-        width: 100%;
+        height: 100vh;
+        width: 25vw;
+        background-color: rgba(248, 249, 250, 0.888);
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+        padding: 20px;
     }
 
-
-    .left_content .myImage {
-        object-fit: contain;
-        width: 100%;
+    .contact_info {
+        background-color: var(--background);
+        padding: 5px 20px;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 40px auto 0 auto;
+        border-radius: 5px;
+        box-shadow: -5px 1px 0 rgba(0, 0, 0, 0.204);
+        border-left: 6px solid var(--secondary);
+        letter-spacing: 0.2rem;
     }
 
-    .left_content .profile_image {
-        left: 0;
-        height: 200px;
-        width: 100%;
-        margin-top: 20px;
+    .logo_brand {
+        height: 50px;
+        width: 200px;
     }
-
-    .profile_image .myImage {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-
-    }
-
-    .left_content .contact_info {
-        margin-top: 20px;
-    }
-
 
     .right_content {
-        height: auto;
-        width: 100%;
-        margin: 0;
+        position: relative;
+        height: 100vh;
+        width: 75vw;
+        background-color: var(--background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        padding: 0 20px 0 100px;
+    }
+
+    .profile_image {
+        position: relative;
+        left: 200px;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.056);
+        border-left: 10px solid var(--background);
+        box-shadow: -5px 1px 0 rgba(0, 0, 0, 0.204);
+        border-radius: 5px;
+    }
+
+    .myImage {
+        border-radius: 5px;
         padding: 20px;
+        height: 100%;
     }
 
     .box_content {
+        padding: 20px;
         width: 100%;
-        padding: 0;
+        height: 500px;
+        background-color: white;
+        box-shadow: -10px 1px 1px rgba(0, 0, 0, 0.299);
     }
 
-    .right_content nav {
-        padding: 10px;
-        width: 100%;
-    }
 
-    .right_content nav ul {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .right_content .box_content .about_me {
-        margin: 20px auto;
-        width: 90%;
-    }
+    /* MEDIA */
 
-    .box_content .about_me p {
-        font-size: 1.3rem;
-    }
 
-    .box_content .about_me span {
-        font-size: 1.7rem;
-    }
+    @media only screen and (max-width: 768px) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
 
-    .box_content .projects {
-        margin: 0;
-    }
+        .left_content {
+            height: auto;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
 
-    .box_content .projects h2 {
-        font-size: 1.7rem;
-        width: 100%;
-    }
 
-    .box_content .social_media {
-        display: flex;
-        flex-direction: column;
-        margin: 20px auto;
-    }
+        .left_content .myImage {
+            object-fit: contain;
+            width: 100%;
+        }
 
-    .box_content .social_media .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
+        .left_content .profile_image {
+            left: 0;
+            height: 200px;
+            width: 100%;
+            margin-top: 20px;
+        }
 
-    .box_content .social_media .icon a {
-        font-size: 10px;
+        .profile_image .myImage {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+
+        }
+
+        .left_content .contact_info {
+            margin-top: 20px;
+        }
+
+
+        .right_content {
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box_content {
+            width: 100%;
+            padding: 0;
+        }
+
+        .right_content nav {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .right_content nav ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right_content .box_content .about_me {
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        .box_content .about_me p {
+            font-size: 1.3rem;
+        }
+
+        .box_content .about_me span {
+            font-size: 1.7rem;
+        }
+
+        .box_content .projects {
+            margin: 0;
+        }
+
+        .box_content .projects h2 {
+            font-size: 1.7rem;
+            width: 100%;
+        }
+
+        .box_content .social_media {
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+        }
+
+        .box_content .social_media .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .box_content .social_media .icon a {
+            font-size: 10px;
+        }
     }
-}

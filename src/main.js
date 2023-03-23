@@ -22,8 +22,12 @@ const app = createApp(App)
 
 app.use(router)
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.component('font-awesome-icon', FontAwesomeIcon)
 =======
 
 >>>>>>> ba57a0c (Navigation is Done!)
+=======
+app.component('font-awesome-icon', FontAwesomeIcon)
+>>>>>>> c260a62 (Finished)
 app.mount('#app')

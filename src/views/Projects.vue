@@ -17,6 +17,9 @@ import cloud from "../assets/first-website.png";
 import documentation from "../assets/JS Documentation.jpg";
 import page from "../assets/landingpage.jpg";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c260a62 (Finished)
 import drum from "../assets/drumkit.jpg";
 import note from "../assets/note.png";
 import math from "../assets/math.png";
@@ -46,11 +49,17 @@ const show = ref(false);
       <img :src="image" alt="profile" class="myImage" />
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="contact_info">
       <code>stannyweb@gmail.com</code>
     </div>
 =======
 >>>>>>> ba57a0c (Navigation is Done!)
+=======
+    <div class="contact_info">
+      <code>stannyweb@gmail.com</code>
+    </div>
+>>>>>>> c260a62 (Finished)
   </div>
   <div class="right_content">
     <div class="box_content">
@@ -219,51 +228,95 @@ const show = ref(false);
 =======
             <p>Spotify Page</p>
             <img :src="spotifyImage" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/Spotify-Artist-Page/"
+              target="_blank"
+            >
+              VIEW
+            </a>
           </div>
           <div class="project">
             <span>2.</span>
             <p>E Commerce WebSite</p>
             <img :src="commerce" class="hidden" />
-            <button>VIEW</button>
+            <a href="https://justaway1.github.io/Telescopy/" target="_blank"
+              >VIEW</a
+            >
           </div>
           <div class="project">
             <span>3.</span>
             <p>ROCK/PAPER/SCISSOR Game</p>
             <img :src="rps" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/RockPaperScissor/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div class="project">
             <span>4.</span>
             <p>Quiz Game</p>
             <img :src="quiz" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
+              target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div class="project">
+            <span>5.</span>
+            <p>Notebook</p>
+            <img :src="note" class="hidden" />
+            <a href="https://justaway1.github.io/Notes/" target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div class="project">
+            <span>6.</span>
+            <p>Another Quiz Game</p>
+            <img :src="math" class="hidden" />
+            <a href="https://justaway1.github.io/Quiz/" target="_blank">VIEW</a>
           </div>
 
           <div v-if="show" class="project">
             <span>5.</span>
             <p>Cloud WebSite</p>
             <img :src="cloud" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/stanny-website/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div v-if="show" class="project">
             <span>6.</span>
             <p>JS Documentation</p>
             <img :src="documentation" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div v-if="show" class="project">
             <span>7.</span>
             <p>Landing Page</p>
             <img :src="page" class="hidden" />
-            <button>VIEW</button>
+            <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div v-if="show" class="project">
+            <span>8.</span>
+            <p>Drumkit</p>
+            <img :src="drum" class="hidden" />
+            <a href="https://justaway1.github.io/DrumKit/" target="_blank"
+              >VIEW</a
+            >
           </div>
           <button class="showAll" @click="show = !show">
             {{ show ? "HIDE THEM" : "SHOW REST" }}
           </button>
-        </div>
-        <div class="unfinished">
-          <h2>Concepts / Unfinished Projects</h2>
         </div>
       </div>
 >>>>>>> 58934d2 (Added 1 project)
@@ -289,6 +342,9 @@ const show = ref(false);
   margin-bottom: 10px;
 <<<<<<< HEAD
   cursor: pointer;
+}
+span {
+  font-weight: normal;
 }
 span {
   font-weight: normal;
@@ -330,6 +386,9 @@ span {
   background-color: rgba(53, 52, 52, 0.095);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c260a62 (Finished)
   margin-bottom: 5px;
 }
 
@@ -373,9 +432,13 @@ p:hover {
 .project span {
   font-size: 2rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-weight: normal;
 =======
 >>>>>>> 58934d2 (Added 1 project)
+=======
+  font-weight: normal;
+>>>>>>> c260a62 (Finished)
 }
 
 .project p {
@@ -387,6 +450,7 @@ p:hover {
 <<<<<<< HEAD
   text-decoration: underline;
 }
+<<<<<<< HEAD
 .view {
   margin-left: auto;
   font-size: 1.5rem;
@@ -398,6 +462,11 @@ p:hover {
 .project button {
   margin-left: auto;
 >>>>>>> 58934d2 (Added 1 project)
+=======
+.project a {
+  margin-left: auto;
+  font-size: 1.5rem;
+>>>>>>> c260a62 (Finished)
   background-color: var(--background);
   color: white;
   padding: 5px 10px;
@@ -406,12 +475,18 @@ p:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c260a62 (Finished)
 .project a:hover {
   opacity: 0.8;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 58934d2 (Added 1 project)
+=======
+>>>>>>> c260a62 (Finished)
 .finished h2,
 .unfinished h2 {
   background-color: var(--background);
