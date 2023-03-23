@@ -3,6 +3,8 @@ import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 import spotifyImage from "../assets/Spotifypage.jpg";
+import commerce from "../assets/tele.jpg";
+import rps from "../assets/ROCK.jpg";
 </script>
 
 <template>
@@ -24,6 +26,18 @@ import spotifyImage from "../assets/Spotifypage.jpg";
             <img :src="spotifyImage" class="hidden" />
             <button>VIEW</button>
           </div>
+          <div class="project">
+            <span>2.</span>
+            <p>E Commerce WebSite</p>
+            <img :src="commerce" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div class="project">
+            <span>3.</span>
+            <p>ROCK/PAPER/SCISSOR Game</p>
+            <img :src="rps" class="hidden" />
+            <button>VIEW</button>
+          </div>
         </div>
         <div class="unfinished">
           <h2>Concepts / Unfinished Projects</h2>
@@ -34,6 +48,9 @@ import spotifyImage from "../assets/Spotifypage.jpg";
 </template>
 
 <style scoped>
+.box_content {
+  overflow: auto;
+}
 .hidden {
   position: absolute;
   top: 100%;
@@ -54,12 +71,17 @@ import spotifyImage from "../assets/Spotifypage.jpg";
   align-items: center;
   padding: 10px;
   background-color: rgba(53, 52, 52, 0.095);
+  margin-bottom: 10px;
 }
 
 p:hover + .hidden {
   display: block;
-  width: 100%;
-  height: 300px;
+  width: 500px;
+  height: 200px;
+}
+
+.project img {
+  object-fit: contain;
 }
 
 p:hover {
@@ -76,6 +98,7 @@ p:hover {
   font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.756);
+  text-decoration: underline;
 }
 .project button {
   margin-left: auto;
