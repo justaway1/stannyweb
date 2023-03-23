@@ -1,5 +1,8 @@
 <script setup>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5fb4b16 (More Projects Added!)
 import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
@@ -13,6 +16,7 @@ import quiz from "../assets/Who wants to be.jpg";
 import cloud from "../assets/first-website.png";
 import documentation from "../assets/JS Documentation.jpg";
 import page from "../assets/landingpage.jpg";
+<<<<<<< HEAD
 import drum from "../assets/drumkit.jpg";
 import note from "../assets/note.png";
 import math from "../assets/math.png";
@@ -29,6 +33,10 @@ import logo from "../assets/logo.png";
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
 >>>>>>> 7869592 (2 more Projects Added)
+=======
+
+const show = ref(false);
+>>>>>>> 5fb4b16 (More Projects Added!)
 </script>
 
 <template>
@@ -225,6 +233,34 @@ import rps from "../assets/ROCK.jpg";
             <img :src="rps" class="hidden" />
             <button>VIEW</button>
           </div>
+          <div class="project">
+            <span>4.</span>
+            <p>Quiz Game</p>
+            <img :src="quiz" class="hidden" />
+            <button>VIEW</button>
+          </div>
+
+          <div v-if="show" class="project">
+            <span>5.</span>
+            <p>Cloud WebSite</p>
+            <img :src="cloud" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div v-if="show" class="project">
+            <span>6.</span>
+            <p>JS Documentation</p>
+            <img :src="documentation" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div v-if="show" class="project">
+            <span>7.</span>
+            <p>Landing Page</p>
+            <img :src="page" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <button class="showAll" @click="show = !show">
+            {{ show ? "HIDE THEM" : "SHOW REST" }}
+          </button>
         </div>
         <div class="unfinished">
           <h2>Concepts / Unfinished Projects</h2>
@@ -239,6 +275,9 @@ import rps from "../assets/ROCK.jpg";
 <<<<<<< HEAD
 <style scoped>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5fb4b16 (More Projects Added!)
 .showAll {
   border: none;
   padding: 5px 20px;
@@ -248,6 +287,7 @@ import rps from "../assets/ROCK.jpg";
   width: 100%;
   font-weight: bold;
   margin-bottom: 10px;
+<<<<<<< HEAD
   cursor: pointer;
 }
 span {
@@ -261,6 +301,9 @@ span {
 <style scoped>
 >>>>>>> 58934d2 (Added 1 project)
 =======
+=======
+}
+>>>>>>> 5fb4b16 (More Projects Added!)
 .box_content {
   overflow: auto;
 }
@@ -314,6 +357,7 @@ p:hover + .hidden {
 =======
   width: 500px;
   height: 200px;
+  z-index: 999;
 }
 
 .project img {
