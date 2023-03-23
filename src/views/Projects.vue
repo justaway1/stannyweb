@@ -5,6 +5,7 @@ import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 import spotifyImage from "../assets/Spotifypage.jpg";
+<<<<<<< HEAD
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
 import quiz from "../assets/Who wants to be.jpg";
@@ -21,6 +22,8 @@ import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 >>>>>>> ba57a0c (Navigation is Done!)
+=======
+>>>>>>> 58934d2 (Added 1 project)
 </script>
 
 <template>
@@ -40,11 +43,15 @@ import logo from "../assets/logo.png";
     <div class="box_content">
       <Nav />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 58934d2 (Added 1 project)
       <div class="projects">
         <div class="finished">
           <h2>Finished Projects</h2>
           <div class="project">
             <span>1.</span>
+<<<<<<< HEAD
             <a
               href="https://justaway1.github.io/Spotify-Artist-Page/"
               target="_blank"
@@ -196,10 +203,22 @@ import logo from "../assets/logo.png";
 =======
       <h1>these are my projects</h1>
 >>>>>>> ba57a0c (Navigation is Done!)
+=======
+            <p>Spotify Page</p>
+            <img :src="spotifyImage" class="hidden" />
+            <button>VIEW</button>
+          </div>
+        </div>
+        <div class="unfinished">
+          <h2>Concepts / Unfinished Projects</h2>
+        </div>
+      </div>
+>>>>>>> 58934d2 (Added 1 project)
     </div>
   </div>
 </template>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <style scoped>
 .showAll {
@@ -220,6 +239,9 @@ span {
   overflow: auto;
   padding-bottom: 20px;
 }
+=======
+<style scoped>
+>>>>>>> 58934d2 (Added 1 project)
 .hidden {
   position: absolute;
   top: 100%;
@@ -240,6 +262,7 @@ span {
   align-items: center;
   padding: 10px;
   background-color: rgba(53, 52, 52, 0.095);
+<<<<<<< HEAD
   margin-bottom: 5px;
 }
 
@@ -252,6 +275,14 @@ span {
 
 .project img {
   object-fit: contain;
+=======
+}
+
+p:hover + .hidden {
+  display: block;
+  width: 100%;
+  height: 300px;
+>>>>>>> 58934d2 (Added 1 project)
 }
 
 p:hover {
@@ -261,7 +292,10 @@ p:hover {
 
 .project span {
   font-size: 2rem;
+<<<<<<< HEAD
   font-weight: normal;
+=======
+>>>>>>> 58934d2 (Added 1 project)
 }
 
 .project p {
@@ -269,11 +303,17 @@ p:hover {
   font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.756);
+<<<<<<< HEAD
   text-decoration: underline;
 }
 .view {
   margin-left: auto;
   font-size: 1.5rem;
+=======
+}
+.project button {
+  margin-left: auto;
+>>>>>>> 58934d2 (Added 1 project)
   background-color: var(--background);
   color: white;
   padding: 5px 10px;
@@ -281,10 +321,13 @@ p:hover {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .project a:hover {
   opacity: 0.8;
 }
 
+=======
+>>>>>>> 58934d2 (Added 1 project)
 .finished h2,
 .unfinished h2 {
   background-color: var(--background);
@@ -297,6 +340,7 @@ p:hover {
   text-transform: uppercase;
   font-weight: bold;
   width: 60%;
+<<<<<<< HEAD
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
 }
@@ -304,3 +348,7 @@ p:hover {
 =======
 <style scoped></style>
 >>>>>>> ba57a0c (Navigation is Done!)
+=======
+}
+</style>
+>>>>>>> 58934d2 (Added 1 project)
