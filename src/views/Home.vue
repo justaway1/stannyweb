@@ -10,6 +10,9 @@ import logo from "../assets/logo.png";
     <div class="profile_image">
       <img :src="image" alt="profile" class="myImage" />
     </div>
+    <div class="contact_info">
+      <code>stannyweb@gmail.com</code>
+    </div>
   </div>
   <div class="right_content">
     <div class="box_content">

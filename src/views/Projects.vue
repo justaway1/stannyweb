@@ -10,6 +10,9 @@ import quiz from "../assets/Who wants to be.jpg";
 import cloud from "../assets/first-website.png";
 import documentation from "../assets/JS Documentation.jpg";
 import page from "../assets/landingpage.jpg";
+import drum from "../assets/drumkit.jpg";
+import note from "../assets/note.png";
+import math from "../assets/math.png";
 
 const show = ref(false);
 </script>
@@ -19,6 +22,9 @@ const show = ref(false);
     <img :src="logo" alt="logo" class="logo_brand" />
     <div class="profile_image">
       <img :src="image" alt="profile" class="myImage" />
+    </div>
+    <div class="contact_info">
+      <code>stannyweb@gmail.com</code>
     </div>
   </div>
   <div class="right_content">
@@ -31,51 +37,95 @@ const show = ref(false);
             <span>1.</span>
             <p>Spotify Page</p>
             <img :src="spotifyImage" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/Spotify-Artist-Page/"
+              target="_blank"
+            >
+              VIEW
+            </a>
           </div>
           <div class="project">
             <span>2.</span>
             <p>E Commerce WebSite</p>
             <img :src="commerce" class="hidden" />
-            <button>VIEW</button>
+            <a href="https://justaway1.github.io/Telescopy/" target="_blank"
+              >VIEW</a
+            >
           </div>
           <div class="project">
             <span>3.</span>
             <p>ROCK/PAPER/SCISSOR Game</p>
             <img :src="rps" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/RockPaperScissor/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div class="project">
             <span>4.</span>
             <p>Quiz Game</p>
             <img :src="quiz" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
+              target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div class="project">
+            <span>5.</span>
+            <p>Notebook</p>
+            <img :src="note" class="hidden" />
+            <a href="https://justaway1.github.io/Notes/" target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div class="project">
+            <span>6.</span>
+            <p>Another Quiz Game</p>
+            <img :src="math" class="hidden" />
+            <a href="https://justaway1.github.io/Quiz/" target="_blank">VIEW</a>
           </div>
 
           <div v-if="show" class="project">
             <span>5.</span>
             <p>Cloud WebSite</p>
             <img :src="cloud" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/stanny-website/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div v-if="show" class="project">
             <span>6.</span>
             <p>JS Documentation</p>
             <img :src="documentation" class="hidden" />
-            <button>VIEW</button>
+            <a
+              href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
           <div v-if="show" class="project">
             <span>7.</span>
             <p>Landing Page</p>
             <img :src="page" class="hidden" />
-            <button>VIEW</button>
+            <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
+              >VIEW</a
+            >
+          </div>
+          <div v-if="show" class="project">
+            <span>8.</span>
+            <p>Drumkit</p>
+            <img :src="drum" class="hidden" />
+            <a href="https://justaway1.github.io/DrumKit/" target="_blank"
+              >VIEW</a
+            >
           </div>
           <button class="showAll" @click="show = !show">
             {{ show ? "HIDE THEM" : "SHOW REST" }}
           </button>
-        </div>
-        <div class="unfinished">
-          <h2>Concepts / Unfinished Projects</h2>
         </div>
       </div>
     </div>
@@ -93,8 +143,12 @@ const show = ref(false);
   font-weight: bold;
   margin-bottom: 10px;
 }
+span {
+  font-weight: normal;
+}
 .box_content {
   overflow: auto;
+  padding-bottom: 20px;
 }
 .hidden {
   position: absolute;
@@ -116,7 +170,7 @@ const show = ref(false);
   align-items: center;
   padding: 10px;
   background-color: rgba(53, 52, 52, 0.095);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 p:hover + .hidden {
@@ -137,6 +191,7 @@ p:hover {
 
 .project span {
   font-size: 2rem;
+  font-weight: normal;
 }
 
 .project p {
@@ -146,13 +201,18 @@ p:hover {
   color: rgba(0, 0, 0, 0.756);
   text-decoration: underline;
 }
-.project button {
+.project a {
   margin-left: auto;
+  font-size: 1.5rem;
   background-color: var(--background);
   color: white;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+}
+
+.project a:hover {
+  opacity: 0.8;
 }
 
 .finished h2,
