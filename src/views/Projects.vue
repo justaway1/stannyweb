@@ -1,10 +1,17 @@
 <script setup>
+import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 import spotifyImage from "../assets/Spotifypage.jpg";
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
+import quiz from "../assets/Who wants to be.jpg";
+import cloud from "../assets/first-website.png";
+import documentation from "../assets/JS Documentation.jpg";
+import page from "../assets/landingpage.jpg";
+
+const show = ref(false);
 </script>
 
 <template>
@@ -38,6 +45,34 @@ import rps from "../assets/ROCK.jpg";
             <img :src="rps" class="hidden" />
             <button>VIEW</button>
           </div>
+          <div class="project">
+            <span>4.</span>
+            <p>Quiz Game</p>
+            <img :src="quiz" class="hidden" />
+            <button>VIEW</button>
+          </div>
+
+          <div v-if="show" class="project">
+            <span>5.</span>
+            <p>Cloud WebSite</p>
+            <img :src="cloud" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div v-if="show" class="project">
+            <span>6.</span>
+            <p>JS Documentation</p>
+            <img :src="documentation" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div v-if="show" class="project">
+            <span>7.</span>
+            <p>Landing Page</p>
+            <img :src="page" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <button class="showAll" @click="show = !show">
+            {{ show ? "HIDE THEM" : "SHOW REST" }}
+          </button>
         </div>
         <div class="unfinished">
           <h2>Concepts / Unfinished Projects</h2>
@@ -48,6 +83,16 @@ import rps from "../assets/ROCK.jpg";
 </template>
 
 <style scoped>
+.showAll {
+  border: none;
+  padding: 5px 20px;
+  background-color: var(--background);
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 .box_content {
   overflow: auto;
 }
@@ -78,6 +123,7 @@ p:hover + .hidden {
   display: block;
   width: 500px;
   height: 200px;
+  z-index: 999;
 }
 
 .project img {
