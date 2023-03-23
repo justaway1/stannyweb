@@ -1,19 +1,18 @@
 <script setup>
+import { RouterView } from "vue-router";
 import Home from "./views/Home.vue";
-import "animate.css";
+import Nav from "./components/Nav.vue";
 </script>
 
 <template>
   <div class="wrapper">
-    <Home />
+    <RouterView />
   </div>
 </template>
 
 <style scoped>
 .wrapper {
   display: flex;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
 </style>

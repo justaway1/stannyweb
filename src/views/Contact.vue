@@ -2,7 +2,6 @@
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
-import About from "../components/About.vue";
 </script>
 
 <template>
@@ -15,7 +14,7 @@ import About from "../components/About.vue";
   <div class="right_content">
     <div class="box_content">
       <Nav />
-      <h1>Hello, my name is STAN!</h1>
+      <h1>CONTACT ME BELOW!</h1>
     </div>
   </div>
 </template>
