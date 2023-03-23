@@ -1,4 +1,5 @@
 <script setup>
+<<<<<<< HEAD
 import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
@@ -15,6 +16,11 @@ import note from "../assets/note.png";
 import math from "../assets/math.png";
 
 const show = ref(false);
+=======
+import Nav from "../components/Nav.vue";
+import image from "../assets/profile.png";
+import logo from "../assets/logo.png";
+>>>>>>> ba57a0c (Navigation is Done!)
 </script>
 
 <template>
@@ -23,13 +29,17 @@ const show = ref(false);
     <div class="profile_image">
       <img :src="image" alt="profile" class="myImage" />
     </div>
+<<<<<<< HEAD
     <div class="contact_info">
       <code>stannyweb@gmail.com</code>
     </div>
+=======
+>>>>>>> ba57a0c (Navigation is Done!)
   </div>
   <div class="right_content">
     <div class="box_content">
       <Nav />
+<<<<<<< HEAD
       <div class="projects">
         <div class="finished">
           <h2>Finished Projects</h2>
@@ -183,10 +193,14 @@ const show = ref(false);
           </button>
         </div>
       </div>
+=======
+      <h1>these are my projects</h1>
+>>>>>>> ba57a0c (Navigation is Done!)
     </div>
   </div>
 </template>
 
+<<<<<<< HEAD
 <style scoped>
 .showAll {
   border: none;
@@ -287,3 +301,6 @@ p:hover {
   letter-spacing: 0.1rem;
 }
 </style>
+=======
+<style scoped></style>
+>>>>>>> ba57a0c (Navigation is Done!)
