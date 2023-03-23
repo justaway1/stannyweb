@@ -1,5 +1,6 @@
 <script setup>
 import Home from "./views/Home.vue";
+import "animate.css";
 </script>
 
 <template>
