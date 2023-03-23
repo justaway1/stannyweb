@@ -6,6 +6,7 @@ import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 import spotifyImage from "../assets/Spotifypage.jpg";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
 import quiz from "../assets/Who wants to be.jpg";
@@ -24,6 +25,10 @@ import logo from "../assets/logo.png";
 >>>>>>> ba57a0c (Navigation is Done!)
 =======
 >>>>>>> 58934d2 (Added 1 project)
+=======
+import commerce from "../assets/tele.jpg";
+import rps from "../assets/ROCK.jpg";
+>>>>>>> 7869592 (2 more Projects Added)
 </script>
 
 <template>
@@ -208,6 +213,18 @@ import logo from "../assets/logo.png";
             <img :src="spotifyImage" class="hidden" />
             <button>VIEW</button>
           </div>
+          <div class="project">
+            <span>2.</span>
+            <p>E Commerce WebSite</p>
+            <img :src="commerce" class="hidden" />
+            <button>VIEW</button>
+          </div>
+          <div class="project">
+            <span>3.</span>
+            <p>ROCK/PAPER/SCISSOR Game</p>
+            <img :src="rps" class="hidden" />
+            <button>VIEW</button>
+          </div>
         </div>
         <div class="unfinished">
           <h2>Concepts / Unfinished Projects</h2>
@@ -221,6 +238,7 @@ import logo from "../assets/logo.png";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <style scoped>
+<<<<<<< HEAD
 .showAll {
   border: none;
   padding: 5px 20px;
@@ -242,6 +260,11 @@ span {
 =======
 <style scoped>
 >>>>>>> 58934d2 (Added 1 project)
+=======
+.box_content {
+  overflow: auto;
+}
+>>>>>>> 7869592 (2 more Projects Added)
 .hidden {
   position: absolute;
   top: 100%;
@@ -263,6 +286,7 @@ span {
   padding: 10px;
   background-color: rgba(53, 52, 52, 0.095);
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: 5px;
 }
 
@@ -276,13 +300,25 @@ span {
 .project img {
   object-fit: contain;
 =======
+=======
+  margin-bottom: 10px;
+>>>>>>> 7869592 (2 more Projects Added)
 }
 
 p:hover + .hidden {
   display: block;
+<<<<<<< HEAD
   width: 100%;
   height: 300px;
 >>>>>>> 58934d2 (Added 1 project)
+=======
+  width: 500px;
+  height: 200px;
+}
+
+.project img {
+  object-fit: contain;
+>>>>>>> 7869592 (2 more Projects Added)
 }
 
 p:hover {
@@ -304,12 +340,16 @@ p:hover {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.756);
 <<<<<<< HEAD
+<<<<<<< HEAD
   text-decoration: underline;
 }
 .view {
   margin-left: auto;
   font-size: 1.5rem;
 =======
+=======
+  text-decoration: underline;
+>>>>>>> 7869592 (2 more Projects Added)
 }
 .project button {
   margin-left: auto;
