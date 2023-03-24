@@ -142,6 +142,7 @@ const show = ref(false);
   width: 100%;
   font-weight: bold;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 span {
   font-weight: normal;
