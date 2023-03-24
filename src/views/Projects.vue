@@ -124,7 +124,7 @@ const show = ref(false);
             >
           </div>
           <button class="showAll" @click="show = !show">
-            {{ show ? "HIDE THEM" : "SHOW REST" }}
+            {{ show ? "Hide" : "Show" }}
           </button>
         </div>
       </div>
