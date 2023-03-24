@@ -341,10 +341,14 @@ const show = ref(false);
   font-weight: bold;
   margin-bottom: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   cursor: pointer;
 }
 span {
   font-weight: normal;
+=======
+  cursor: pointer;
+>>>>>>> 123265f (added cursor)
 }
 span {
   font-weight: normal;
