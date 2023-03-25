@@ -14,15 +14,7 @@ import drum from "../assets/drumkit.jpg";
 import note from "../assets/note.png";
 import math from "../assets/math.png";
 
-import Nav from "../components/Nav.vue";
-import image from "../assets/profile.png";
-import logo from "../assets/logo.png";
-import commerce from "../assets/tele.jpg";
-import rps from "../assets/ROCK.jpg";
-
-
 const show = ref(false);
-
 </script>
 
 <template>
@@ -195,148 +187,138 @@ const show = ref(false);
           </button>
         </div>
       </div>
-            <p>Spotify Page</p>
-            <img :src="spotifyImage" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/Spotify-Artist-Page/"
-              target="_blank"
-            >
-              VIEW
-            </a>
-          </div>
-          <div class="project">
-            <span>2.</span>
-            <a href="https://justaway1.github.io/Telescopy/" target="_blank"
-              ><p>E Commerce WebSite</p></a
-            >
-            <img :src="commerce" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/Telescopy/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div class="project">
-            <span>3.</span>
-            <a
-              href="https://justaway1.github.io/RockPaperScissor/"
-              target="_blank"
-              ><p>ROCK/PAPER/SCISSOR Game</p></a
-            >
-            <img :src="rps" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/RockPaperScissor/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div class="project">
-            <span>4.</span>
-            <a
-              href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
-              target="_blank"
-              ><p>Quiz Game</p></a
-            >
-            <img :src="quiz" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div class="project">
-            <span>5.</span>
-            <a href="https://justaway1.github.io/Notes/" target="_blank"
-              ><p>Notebook</p></a
-            >
-            <img :src="note" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/Notes/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div class="project">
-            <span>6.</span>
-            <a href="https://justaway1.github.io/Quiz/" target="_blank"
-              ><p>Another Quiz Game</p></a
-            >
-            <img :src="math" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/Quiz/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
+      <p>Spotify Page</p>
+      <img :src="spotifyImage" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/Spotify-Artist-Page/"
+        target="_blank"
+      >
+        VIEW
+      </a>
+    </div>
+    <div class="project">
+      <span>2.</span>
+      <a href="https://justaway1.github.io/Telescopy/" target="_blank"
+        ><p>E Commerce WebSite</p></a
+      >
+      <img :src="commerce" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/Telescopy/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div class="project">
+      <span>3.</span>
+      <a href="https://justaway1.github.io/RockPaperScissor/" target="_blank"
+        ><p>ROCK/PAPER/SCISSOR Game</p></a
+      >
+      <img :src="rps" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/RockPaperScissor/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div class="project">
+      <span>4.</span>
+      <a
+        href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
+        target="_blank"
+        ><p>Quiz Game</p></a
+      >
+      <img :src="quiz" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div class="project">
+      <span>5.</span>
+      <a href="https://justaway1.github.io/Notes/" target="_blank"
+        ><p>Notebook</p></a
+      >
+      <img :src="note" class="hidden" />
+      <a class="view" href="https://justaway1.github.io/Notes/" target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div class="project">
+      <span>6.</span>
+      <a href="https://justaway1.github.io/Quiz/" target="_blank"
+        ><p>Another Quiz Game</p></a
+      >
+      <img :src="math" class="hidden" />
+      <a class="view" href="https://justaway1.github.io/Quiz/" target="_blank"
+        >VIEW</a
+      >
+    </div>
 
-          <div v-if="show" class="project">
-            <span>5.</span>
-            <a
-              href="https://justaway1.github.io/stanny-website/"
-              target="_blank"
-              ><p>Cloud WebSite</p></a
-            >
+    <div v-if="show" class="project">
+      <span>5.</span>
+      <a href="https://justaway1.github.io/stanny-website/" target="_blank"
+        ><p>Cloud WebSite</p></a
+      >
 
-            <img :src="cloud" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/stanny-website/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div v-if="show" class="project">
-            <span>6.</span>
-            <a
-              href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
-              target="_blank"
-              ><p>JS Documentation</p></a
-            >
+      <img :src="cloud" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/stanny-website/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div v-if="show" class="project">
+      <span>6.</span>
+      <a
+        href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
+        target="_blank"
+        ><p>JS Documentation</p></a
+      >
 
-            <img :src="documentation" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div v-if="show" class="project">
-            <span>7.</span>
-            <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
-              ><p>Landing Page</p></a
-            >
-            <img :src="page" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/Landing-Page/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <div v-if="show" class="project">
-            <span>8.</span>
-            <a href="https://justaway1.github.io/DrumKit/" target="_blank"
-              ><p>Drumkit</p></a
-            >
-            <img :src="drum" class="hidden" />
-            <a
-              class="view"
-              href="https://justaway1.github.io/DrumKit/"
-              target="_blank"
-              >VIEW</a
-            >
-          </div>
-          <button class="showAll" @click="show = !show">
-            {{ show ? "HIDE THEM" : "SHOW REST" }}
-          </button>
-        </div>
+      <img :src="documentation" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div v-if="show" class="project">
+      <span>7.</span>
+      <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
+        ><p>Landing Page</p></a
+      >
+      <img :src="page" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/Landing-Page/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <div v-if="show" class="project">
+      <span>8.</span>
+      <a href="https://justaway1.github.io/DrumKit/" target="_blank"
+        ><p>Drumkit</p></a
+      >
+      <img :src="drum" class="hidden" />
+      <a
+        class="view"
+        href="https://justaway1.github.io/DrumKit/"
+        target="_blank"
+        >VIEW</a
+      >
+    </div>
+    <button class="showAll" @click="show = !show">
+      {{ show ? "HIDE THEM" : "SHOW REST" }}
+    </button>
+  </div>
 </template>
 
 <style scoped>
@@ -354,7 +336,6 @@ const show = ref(false);
 span {
   font-weight: normal;
   cursor: pointer;
-
 }
 span {
   font-weight: normal;
@@ -427,7 +408,6 @@ p:hover {
   font-weight: normal;
 
   font-weight: normal;
-
 }
 
 .project p {
@@ -444,15 +424,12 @@ p:hover {
   font-size: 1.5rem;
 
   text-decoration: underline;
-
 }
 .project button {
   margin-left: auto;
-
 }
 
 .view {
-
   margin-left: auto;
   font-size: 1.5rem;
 
