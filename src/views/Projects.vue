@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
@@ -22,9 +22,6 @@ const show = ref(false);
     <img :src="logo" alt="logo" class="logo_brand" />
     <div class="profile_image">
       <img :src="image" alt="profile" class="myImage" />
-    </div>
-    <div class="contact_info">
-      <code>stannyweb@gmail.com</code>
     </div>
     <div class="contact_info">
       <code>stannyweb@gmail.com</code>
@@ -56,9 +53,9 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>2.</span>
-            <a href="https://justaway1.github.io/Telescopy/" target="_blank"
-              ><p>E Commerce WebSite</p></a
-            >
+            <a href="https://justaway1.github.io/Telescopy/" target="_blank">
+              <p>E Commerce WebSite</p>
+            </a>
             <img :src="commerce" class="hidden" />
             <a
               class="view"
@@ -72,8 +69,9 @@ const show = ref(false);
             <a
               href="https://justaway1.github.io/RockPaperScissor/"
               target="_blank"
-              ><p>ROCK/PAPER/SCISSOR Game</p></a
             >
+              <p>ROCK/PAPER/SCISSOR Game</p>
+            </a>
             <img :src="rps" class="hidden" />
             <a
               class="view"
@@ -87,8 +85,9 @@ const show = ref(false);
             <a
               href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
               target="_blank"
-              ><p>Quiz Game</p></a
             >
+              <p>Quiz Game</p>
+            </a>
             <img :src="quiz" class="hidden" />
             <a
               class="view"
@@ -99,9 +98,9 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>5.</span>
-            <a href="https://justaway1.github.io/Notes/" target="_blank"
-              ><p>Notebook</p></a
-            >
+            <a href="https://justaway1.github.io/Notes/" target="_blank">
+              <p>Notebook</p>
+            </a>
             <img :src="note" class="hidden" />
             <a
               class="view"
@@ -112,9 +111,9 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>6.</span>
-            <a href="https://justaway1.github.io/Quiz/" target="_blank"
-              ><p>Another Quiz Game</p></a
-            >
+            <a href="https://justaway1.github.io/Quiz/" target="_blank">
+              <p>Another Quiz Game</p>
+            </a>
             <img :src="math" class="hidden" />
             <a
               class="view"
@@ -129,8 +128,9 @@ const show = ref(false);
             <a
               href="https://justaway1.github.io/stanny-website/"
               target="_blank"
-              ><p>Cloud WebSite</p></a
             >
+              <p>Cloud WebSite</p>
+            </a>
 
             <img :src="cloud" class="hidden" />
             <a
@@ -145,8 +145,9 @@ const show = ref(false);
             <a
               href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
               target="_blank"
-              ><p>JS Documentation</p></a
             >
+              <p>JS Documentation</p>
+            </a>
 
             <img :src="documentation" class="hidden" />
             <a
@@ -158,9 +159,9 @@ const show = ref(false);
           </div>
           <div v-if="show" class="project">
             <span>7.</span>
-            <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
-              ><p>Landing Page</p></a
-            >
+            <a href="https://justaway1.github.io/Landing-Page/" target="_blank">
+              <p>Landing Page</p>
+            </a>
             <img :src="page" class="hidden" />
             <a
               class="view"
@@ -171,9 +172,9 @@ const show = ref(false);
           </div>
           <div v-if="show" class="project">
             <span>8.</span>
-            <a href="https://justaway1.github.io/DrumKit/" target="_blank"
-              ><p>Drumkit</p></a
-            >
+            <a href="https://justaway1.github.io/DrumKit/" target="_blank">
+              <p>Drumkit</p>
+            </a>
             <img :src="drum" class="hidden" />
             <a
               class="view"
@@ -187,137 +188,7 @@ const show = ref(false);
           </button>
         </div>
       </div>
-      <p>Spotify Page</p>
-      <img :src="spotifyImage" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/Spotify-Artist-Page/"
-        target="_blank"
-      >
-        VIEW
-      </a>
     </div>
-    <div class="project">
-      <span>2.</span>
-      <a href="https://justaway1.github.io/Telescopy/" target="_blank"
-        ><p>E Commerce WebSite</p></a
-      >
-      <img :src="commerce" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/Telescopy/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div class="project">
-      <span>3.</span>
-      <a href="https://justaway1.github.io/RockPaperScissor/" target="_blank"
-        ><p>ROCK/PAPER/SCISSOR Game</p></a
-      >
-      <img :src="rps" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/RockPaperScissor/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div class="project">
-      <span>4.</span>
-      <a
-        href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
-        target="_blank"
-        ><p>Quiz Game</p></a
-      >
-      <img :src="quiz" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div class="project">
-      <span>5.</span>
-      <a href="https://justaway1.github.io/Notes/" target="_blank"
-        ><p>Notebook</p></a
-      >
-      <img :src="note" class="hidden" />
-      <a class="view" href="https://justaway1.github.io/Notes/" target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div class="project">
-      <span>6.</span>
-      <a href="https://justaway1.github.io/Quiz/" target="_blank"
-        ><p>Another Quiz Game</p></a
-      >
-      <img :src="math" class="hidden" />
-      <a class="view" href="https://justaway1.github.io/Quiz/" target="_blank"
-        >VIEW</a
-      >
-    </div>
-
-    <div v-if="show" class="project">
-      <span>5.</span>
-      <a href="https://justaway1.github.io/stanny-website/" target="_blank"
-        ><p>Cloud WebSite</p></a
-      >
-
-      <img :src="cloud" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/stanny-website/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div v-if="show" class="project">
-      <span>6.</span>
-      <a
-        href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
-        target="_blank"
-        ><p>JS Documentation</p></a
-      >
-
-      <img :src="documentation" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div v-if="show" class="project">
-      <span>7.</span>
-      <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
-        ><p>Landing Page</p></a
-      >
-      <img :src="page" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/Landing-Page/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <div v-if="show" class="project">
-      <span>8.</span>
-      <a href="https://justaway1.github.io/DrumKit/" target="_blank"
-        ><p>Drumkit</p></a
-      >
-      <img :src="drum" class="hidden" />
-      <a
-        class="view"
-        href="https://justaway1.github.io/DrumKit/"
-        target="_blank"
-        >VIEW</a
-      >
-    </div>
-    <button class="showAll" @click="show = !show">
-      {{ show ? "HIDE THEM" : "SHOW REST" }}
-    </button>
   </div>
 </template>
 
@@ -333,26 +204,32 @@ const show = ref(false);
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 span {
   font-weight: normal;
   cursor: pointer;
 }
+
 span {
   font-weight: normal;
 }
+
 .box_content {
   overflow: auto;
   padding-bottom: 20px;
 }
+
 .box_content {
   overflow: auto;
 }
+
 .hidden {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
 }
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -425,6 +302,7 @@ p:hover {
 
   text-decoration: underline;
 }
+
 .project button {
   margin-left: auto;
 }
