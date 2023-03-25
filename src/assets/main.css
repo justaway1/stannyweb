@@ -51,7 +51,12 @@ ul {
     align-items: center;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD nav a {
+=======
+
+nav a {
+>>>>>>> 87dd9d3 (updates the links)
     font-size: 2rem;
     color: var(--background);
     font-weight: bold;
