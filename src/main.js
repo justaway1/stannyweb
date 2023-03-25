@@ -3,9 +3,6 @@ import App from './App.vue'
 
 import router from './router'
 
-// import router from './router'
-
-import router from './router'
 import './assets/main.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,5 +17,4 @@ app.use(router)
 AD
 app.component('font-awesome-icon', FontAwesomeIcon)
 
-app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
