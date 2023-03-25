@@ -89,7 +89,12 @@ const show = ref(false);
 
           <div v-if="show" class="project">
             <span>5.</span>
-            <p>Cloud WebSite</p>
+            <a
+              href="https://justaway1.github.io/stanny-website/"
+              target="_blank"
+              ><p>Cloud WebSite</p></a
+            >
+
             <img :src="cloud" class="hidden" />
             <a
               href="https://justaway1.github.io/stanny-website/"
