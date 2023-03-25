@@ -35,9 +35,15 @@ const show = ref(false);
           <h2>Finished Projects</h2>
           <div class="project">
             <span>1.</span>
-            <p>Spotify Page</p>
+            <a
+              href="https://justaway1.github.io/Spotify-Artist-Page/"
+              target="_blank"
+            >
+              <p>Spotify Page</p>
+            </a>
             <img :src="spotifyImage" class="hidden" />
             <a
+              class="view"
               href="https://justaway1.github.io/Spotify-Artist-Page/"
               target="_blank"
             >
@@ -46,17 +52,27 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>2.</span>
-            <p>E Commerce WebSite</p>
-            <img :src="commerce" class="hidden" />
             <a href="https://justaway1.github.io/Telescopy/" target="_blank"
+              ><p>E Commerce WebSite</p></a
+            >
+            <img :src="commerce" class="hidden" />
+            <a
+              class="view"
+              href="https://justaway1.github.io/Telescopy/"
+              target="_blank"
               >VIEW</a
             >
           </div>
           <div class="project">
             <span>3.</span>
-            <p>ROCK/PAPER/SCISSOR Game</p>
+            <a
+              href="https://justaway1.github.io/RockPaperScissor/"
+              target="_blank"
+              ><p>ROCK/PAPER/SCISSOR Game</p></a
+            >
             <img :src="rps" class="hidden" />
             <a
+              class="view"
               href="https://justaway1.github.io/RockPaperScissor/"
               target="_blank"
               >VIEW</a
@@ -64,9 +80,14 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>4.</span>
-            <p>Quiz Game</p>
+            <a
+              href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
+              target="_blank"
+              ><p>Quiz Game</p></a
+            >
             <img :src="quiz" class="hidden" />
             <a
+              class="view"
               href="https://justaway1.github.io/WhoWantsToBeAProgrammer/"
               target="_blank"
               >VIEW</a
@@ -74,17 +95,29 @@ const show = ref(false);
           </div>
           <div class="project">
             <span>5.</span>
-            <p>Notebook</p>
-            <img :src="note" class="hidden" />
             <a href="https://justaway1.github.io/Notes/" target="_blank"
+              ><p>Notebook</p></a
+            >
+            <img :src="note" class="hidden" />
+            <a
+              class="view"
+              href="https://justaway1.github.io/Notes/"
+              target="_blank"
               >VIEW</a
             >
           </div>
           <div class="project">
             <span>6.</span>
-            <p>Another Quiz Game</p>
+            <a href="https://justaway1.github.io/Quiz/" target="_blank"
+              ><p>Another Quiz Game</p></a
+            >
             <img :src="math" class="hidden" />
-            <a href="https://justaway1.github.io/Quiz/" target="_blank">VIEW</a>
+            <a
+              class="view"
+              href="https://justaway1.github.io/Quiz/"
+              target="_blank"
+              >VIEW</a
+            >
           </div>
 
           <div v-if="show" class="project">
@@ -97,6 +130,7 @@ const show = ref(false);
 
             <img :src="cloud" class="hidden" />
             <a
+              class="view"
               href="https://justaway1.github.io/stanny-website/"
               target="_blank"
               >VIEW</a
@@ -104,9 +138,15 @@ const show = ref(false);
           </div>
           <div v-if="show" class="project">
             <span>6.</span>
-            <p>JS Documentation</p>
+            <a
+              href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
+              target="_blank"
+              ><p>JS Documentation</p></a
+            >
+
             <img :src="documentation" class="hidden" />
             <a
+              class="view"
               href="https://justaway1.github.io/JS-Technical-Documentation-Page/"
               target="_blank"
               >VIEW</a
@@ -114,17 +154,27 @@ const show = ref(false);
           </div>
           <div v-if="show" class="project">
             <span>7.</span>
-            <p>Landing Page</p>
-            <img :src="page" class="hidden" />
             <a href="https://justaway1.github.io/Landing-Page/" target="_blank"
+              ><p>Landing Page</p></a
+            >
+            <img :src="page" class="hidden" />
+            <a
+              class="view"
+              href="https://justaway1.github.io/Landing-Page/"
+              target="_blank"
               >VIEW</a
             >
           </div>
           <div v-if="show" class="project">
             <span>8.</span>
-            <p>Drumkit</p>
-            <img :src="drum" class="hidden" />
             <a href="https://justaway1.github.io/DrumKit/" target="_blank"
+              ><p>Drumkit</p></a
+            >
+            <img :src="drum" class="hidden" />
+            <a
+              class="view"
+              href="https://justaway1.github.io/DrumKit/"
+              target="_blank"
               >VIEW</a
             >
           </div>
@@ -179,7 +229,7 @@ span {
   margin-bottom: 5px;
 }
 
-p:hover + .hidden {
+.project a:hover + .hidden {
   display: block;
   width: 500px;
   height: 200px;
@@ -207,7 +257,7 @@ p:hover {
   color: rgba(0, 0, 0, 0.756);
   text-decoration: underline;
 }
-.project a {
+.view {
   margin-left: auto;
   font-size: 1.5rem;
   background-color: var(--background);
@@ -233,5 +283,7 @@ p:hover {
   text-transform: uppercase;
   font-weight: bold;
   width: 60%;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
 }
 </style>

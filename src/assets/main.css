@@ -49,7 +49,8 @@ ul {
     align-items: center;
 }
 
-a {
+
+nav a {
     font-size: 2rem;
     color: var(--background);
     font-weight: bold;
