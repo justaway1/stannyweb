@@ -1,45 +1,28 @@
 <script setup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5fb4b16 (More Projects Added!)
 import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
 import spotifyImage from "../assets/Spotifypage.jpg";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
 import quiz from "../assets/Who wants to be.jpg";
 import cloud from "../assets/first-website.png";
 import documentation from "../assets/JS Documentation.jpg";
 import page from "../assets/landingpage.jpg";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c260a62 (Finished)
 import drum from "../assets/drumkit.jpg";
 import note from "../assets/note.png";
 import math from "../assets/math.png";
 
-const show = ref(false);
-=======
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
 import logo from "../assets/logo.png";
->>>>>>> ba57a0c (Navigation is Done!)
-=======
->>>>>>> 58934d2 (Added 1 project)
-=======
 import commerce from "../assets/tele.jpg";
 import rps from "../assets/ROCK.jpg";
->>>>>>> 7869592 (2 more Projects Added)
-=======
+
 
 const show = ref(false);
->>>>>>> 5fb4b16 (More Projects Added!)
+
 </script>
 
 <template>
@@ -48,42 +31,28 @@ const show = ref(false);
     <div class="profile_image">
       <img :src="image" alt="profile" class="myImage" />
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div class="contact_info">
       <code>stannyweb@gmail.com</code>
     </div>
-=======
->>>>>>> ba57a0c (Navigation is Done!)
-=======
     <div class="contact_info">
       <code>stannyweb@gmail.com</code>
     </div>
->>>>>>> c260a62 (Finished)
   </div>
   <div class="right_content">
     <div class="box_content">
       <Nav />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 58934d2 (Added 1 project)
+
       <div class="projects">
         <div class="finished">
           <h2>Finished Projects</h2>
           <div class="project">
             <span>1.</span>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 87dd9d3 (updates the links)
             <a
               href="https://justaway1.github.io/Spotify-Artist-Page/"
               target="_blank"
             >
               <p>Spotify Page</p>
             </a>
-<<<<<<< HEAD
             <img :src="spotifyImage" class="hidden" />
             <a
               class="view"
@@ -226,13 +195,7 @@ const show = ref(false);
           </button>
         </div>
       </div>
-=======
-      <h1>these are my projects</h1>
->>>>>>> ba57a0c (Navigation is Done!)
-=======
             <p>Spotify Page</p>
-=======
->>>>>>> 87dd9d3 (updates the links)
             <img :src="spotifyImage" class="hidden" />
             <a
               class="view"
@@ -374,19 +337,9 @@ const show = ref(false);
             {{ show ? "HIDE THEM" : "SHOW REST" }}
           </button>
         </div>
-      </div>
->>>>>>> 58934d2 (Added 1 project)
-    </div>
-  </div>
 </template>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <style scoped>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5fb4b16 (More Projects Added!)
 .showAll {
   border: none;
   padding: 5px 20px;
@@ -396,15 +349,12 @@ const show = ref(false);
   width: 100%;
   font-weight: bold;
   margin-bottom: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   cursor: pointer;
 }
 span {
   font-weight: normal;
-=======
   cursor: pointer;
->>>>>>> 123265f (added cursor)
+
 }
 span {
   font-weight: normal;
@@ -413,17 +363,9 @@ span {
   overflow: auto;
   padding-bottom: 20px;
 }
-=======
-<style scoped>
->>>>>>> 58934d2 (Added 1 project)
-=======
-=======
-}
->>>>>>> 5fb4b16 (More Projects Added!)
 .box_content {
   overflow: auto;
 }
->>>>>>> 7869592 (2 more Projects Added)
 .hidden {
   position: absolute;
   top: 100%;
@@ -444,11 +386,7 @@ span {
   align-items: center;
   padding: 10px;
   background-color: rgba(53, 52, 52, 0.095);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c260a62 (Finished)
+
   margin-bottom: 5px;
 }
 
@@ -461,19 +399,14 @@ span {
 
 .project img {
   object-fit: contain;
-=======
-=======
+
   margin-bottom: 10px;
->>>>>>> 7869592 (2 more Projects Added)
 }
 
 p:hover + .hidden {
   display: block;
-<<<<<<< HEAD
   width: 100%;
   height: 300px;
->>>>>>> 58934d2 (Added 1 project)
-=======
   width: 500px;
   height: 200px;
   z-index: 999;
@@ -481,7 +414,6 @@ p:hover + .hidden {
 
 .project img {
   object-fit: contain;
->>>>>>> 7869592 (2 more Projects Added)
 }
 
 p:hover {
@@ -491,14 +423,11 @@ p:hover {
 
 .project span {
   font-size: 2rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   font-weight: normal;
-=======
->>>>>>> 58934d2 (Added 1 project)
-=======
+
   font-weight: normal;
->>>>>>> c260a62 (Finished)
+
 }
 
 .project p {
@@ -506,31 +435,27 @@ p:hover {
   font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.756);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   text-decoration: underline;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .view {
   margin-left: auto;
   font-size: 1.5rem;
-=======
-=======
+
   text-decoration: underline;
->>>>>>> 7869592 (2 more Projects Added)
+
 }
 .project button {
   margin-left: auto;
->>>>>>> 58934d2 (Added 1 project)
-=======
-.project a {
-=======
+
+}
+
 .view {
->>>>>>> 87dd9d3 (updates the links)
+
   margin-left: auto;
   font-size: 1.5rem;
->>>>>>> c260a62 (Finished)
+
   background-color: var(--background);
   color: white;
   padding: 5px 10px;
@@ -538,19 +463,10 @@ p:hover {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c260a62 (Finished)
 .project a:hover {
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> 58934d2 (Added 1 project)
-=======
->>>>>>> c260a62 (Finished)
 .finished h2,
 .unfinished h2 {
   background-color: var(--background);
@@ -563,18 +479,7 @@ p:hover {
   text-transform: uppercase;
   font-weight: bold;
   width: 60%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 87dd9d3 (updates the links)
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
 }
 </style>
-=======
-<style scoped></style>
->>>>>>> ba57a0c (Navigation is Done!)
-=======
-}
-</style>
->>>>>>> 58934d2 (Added 1 project)
