@@ -14,7 +14,6 @@ library.add(faLinkedin, faGithub)
 const app = createApp(App)
 
 app.use(router)
-AD
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')

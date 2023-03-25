@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { ref } from "vue";
 import Nav from "../components/Nav.vue";
 import image from "../assets/profile.png";
