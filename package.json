@@ -8,11 +8,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+"vite": "^0.0.0",
+>>>>>>> 21c19381511ffeced00b9180e5307b79312ddf1d
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21c19381511ffeced00b9180e5307b79312ddf1d
     "animate.css": "^4.1.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
