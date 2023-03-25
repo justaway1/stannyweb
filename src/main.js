@@ -1,7 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
+<<<<<<< HEAD
 import router from './router'
+=======
+// import router from './router'
+>>>>>>> 97be8fc (Updates)
 import './assets/main.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'

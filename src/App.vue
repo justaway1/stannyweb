@@ -1,7 +1,11 @@
 <script setup>
 import { RouterView } from "vue-router";
 import Home from "./views/Home.vue";
+<<<<<<< HEAD
 import Nav from "./components/Nav.vue";
+=======
+import "animate.css";
+>>>>>>> 97be8fc (Updates)
 </script>
 
 <template>
