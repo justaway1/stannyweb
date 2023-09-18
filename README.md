@@ -5,8 +5,8 @@ with all my projects!**
 
 
 **Tech used:**
- - HTML5...
- - CSS3...
+ - HTML5
+ - CSS3
  - JavaScript
  - Vue.js
 
